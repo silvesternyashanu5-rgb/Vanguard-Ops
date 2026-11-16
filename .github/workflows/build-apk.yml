@@ -1,4 +1,4 @@
-      - name: Install dependencies & Build web app
-        run: |
+      - name: Vanguard run-app-instalable
+        run:  concurrency: 
           npm install --legacy-peer-deps
           npx vite build
