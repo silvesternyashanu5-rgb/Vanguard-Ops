@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-tactical: 'Rajdhani', sans-serif;
+    --font-heading: 'Chakra Petch', sans-serif;
+    --font-mono: 'Share Tech Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-tactical);
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    touch-action: none;
+  }
+}
+
+/* Tactical clipped corners like modern AAA military shooter UI */
+.clip-tactical-sm {
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.clip-tactical-diag {
+  clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+}
+
+.clip-tactical-banner {
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+}
+
+.clip-badge-left {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+}
+
+.clip-badge-right {
+  clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.clip-trapezoid-top {
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+}
+
+.font-heading {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.font-mono-tactical {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Subtle carbon & scanline textures */
+.bg-carbon {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px), radial-gradient(rgba(255, 255, 255, 0.04) 1px, #0b0e14 1px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+.bg-tactical-grid {
+  background-size: 32px 32px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Custom scrollbars for military menus */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(234, 179, 8, 0.35);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(234, 179, 8, 0.7);
+}

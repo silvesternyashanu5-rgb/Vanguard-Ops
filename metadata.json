@@ -1,0 +1,6 @@
+{
+  "name": "Vanguard Ops: 3D Tactical Deathmatch",
+  "description": "High-octane 3D tactical phone shooter featuring realistic arena deathmatch combat, power-ups, full-screen loadout and operator layers, and a modern minimalist HUD.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
